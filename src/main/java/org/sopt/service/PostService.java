@@ -6,9 +6,12 @@ import org.sopt.repository.PostRepository;
 import java.util.List;
 
 public class PostService {
-    private PostRepository postRepository = new PostRepository();
+    private final PostRepository postRepository = new PostRepository();
+    private int postId = 1;
 
-    public void createPost(Post post) {
+    public void createPost(String title) {
+        Post post = new Post(postId++, title);
+
         postRepository.save(post);
     }
 

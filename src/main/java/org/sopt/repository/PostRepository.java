@@ -29,7 +29,7 @@ public class PostRepository {
     public boolean delete(int id) {
         for (Post post : postList) {
             if (post.getId() == id) {
-                postList.remove(postList.indexOf(post));
+                postList.remove(post);
                 return true;
             }
         }

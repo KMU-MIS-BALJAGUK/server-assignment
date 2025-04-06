@@ -6,13 +6,10 @@ import org.sopt.service.PostService;
 import java.util.List;
 
 public class PostController {
-    private PostService postService = new PostService();
-    private int postId;
+    private final PostService postService = new PostService();
 
-    public void createPost(String title) {
-        Post post = new Post(postId++, title);
-
-        postService.createPost(post);
+    public void createPost(final String title) {
+        postService.createPost(title);
     }
 
     public List<Post> getAllPosts() {
