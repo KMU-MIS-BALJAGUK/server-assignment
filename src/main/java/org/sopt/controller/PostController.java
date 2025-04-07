@@ -19,9 +19,17 @@ public class PostController {
     public Post getPostById(int id) {
         return postService.getPostById(id);
     }
+    public Boolean updatePostTitle(int id, String newTitle) {
+        return null;
+    }
 
     public boolean deletePostById(int id) {
         return postService.deletePostById(id);
     }
+
+    public List<Post> searchPostsByKeyword(String keyword) {
+        return null;
+    }
+
 }
 
