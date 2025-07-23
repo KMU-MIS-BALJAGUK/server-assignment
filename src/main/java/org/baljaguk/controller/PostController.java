@@ -1,7 +1,7 @@
-package org.sopt.controller;
+package org.baljaguk.controller;
 
-import org.sopt.domain.Post;
-import org.sopt.service.PostService;
+import org.baljaguk.domain.Post;
+import org.baljaguk.service.PostService;
 
 import java.util.List;
 
@@ -18,17 +18,6 @@ public class PostController {
 
     public Post getPostById(int id) {
         return postService.getPostById(id);
-    }
-    public Boolean updatePostTitle(int id, String newTitle) {
-        return null;
-    }
-
-    public boolean deletePostById(int id) {
-        return postService.deletePostById(id);
-    }
-
-    public List<Post> searchPostsByKeyword(String keyword) {
-        return null;
     }
 
 }

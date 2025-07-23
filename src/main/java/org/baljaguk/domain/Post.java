@@ -1,4 +1,4 @@
-package org.sopt.domain;
+package org.baljaguk.domain;
 
 public class Post {
     private int id;

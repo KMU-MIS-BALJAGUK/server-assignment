@@ -1,6 +1,6 @@
-package org.sopt.repository;
+package org.baljaguk.repository;
 
-import org.sopt.domain.Post;
+import org.baljaguk.domain.Post;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -24,15 +24,5 @@ public class PostRepository {
         }
 
         return null;
-    }
-
-    public boolean delete(int id) {
-        for (Post post : postList) {
-            if (post.getId() == id) {
-                postList.remove(post);
-                return true;
-            }
-        }
-        return false;
     }
 }

@@ -1,7 +1,7 @@
-package org.sopt.service;
+package org.baljaguk.service;
 
-import org.sopt.domain.Post;
-import org.sopt.repository.PostRepository;
+import org.baljaguk.domain.Post;
+import org.baljaguk.repository.PostRepository;
 
 import java.util.List;
 
@@ -21,9 +21,5 @@ public class PostService {
 
     public Post getPostById(int id) {
         return postRepository.findPostById(id);
-    }
-
-    public boolean deletePostById(int id) {
-        return postRepository.delete(id);
     }
 }

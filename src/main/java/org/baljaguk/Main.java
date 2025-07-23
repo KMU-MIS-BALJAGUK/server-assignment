@@ -1,9 +1,9 @@
-package org.sopt;
+package org.baljaguk;
 
 import java.util.List;
 import java.util.Scanner;
-import org.sopt.controller.PostController;
-import org.sopt.domain.Post;
+import org.baljaguk.controller.PostController;
+import org.baljaguk.domain.Post;
 
 public class Main {
     public static void main(String[] args) {
